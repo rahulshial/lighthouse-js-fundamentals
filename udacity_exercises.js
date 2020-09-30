@@ -336,3 +336,27 @@ while (n >= 0) {
   // Otherwise, you loop will run infinite iterations
   n = n - 1;
 }
+
+var x = 9;
+while (x >= 1) {
+  console.log("hello " + x);
+  x = x - 1;
+}
+
+for (x = 9; x >= 1; x--) {
+  console.log("hello " + x);
+}
+
+let solution = 1;
+
+for (let i = 1; i <= 12; i++) {
+  solution *= i;
+}
+
+console.log(solution);
+
+for (let row = 0;  row <= 25; row++) {
+  for (let seat = 0; seat <= 99; seat ++) {
+    console.log(row+"-"+seat);
+  }
+}
