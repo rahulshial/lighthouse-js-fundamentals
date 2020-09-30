@@ -11,44 +11,44 @@ let a = 1;
 let b = 2;
 
 if (a > b) {
-  console.log("a is greater than b");
+    console.log("a is greater than b");
 } else {
-  console.log("a is less than or equal to b");
+    console.log("a is less than or equal to b");
 }
 
 let weather = "rain";
 
 if (weather === "snow") {
-  console.log("Bring a coat.");
+    console.log("Bring a coat.");
 } else if (weather === "rain") {
-  console.log("Bring a rain jacket.");
+    console.log("Bring a rain jacket.");
 } else {
-  console.log("Wear what you have on.");
+    console.log("Wear what you have on.");
 }
 
 money = 100.50;
 price = 100.50;
 
 if (money > price) {
-  console.log("You paid extra, here's your change.");
+    console.log("You paid extra, here's your change.");
 } else if (money === price) {
-  console.log("You paid the exact amount, have a nice day!");
+    console.log("You paid the exact amount, have a nice day!");
 } else {
-  console.log("That's not enough, you still owe me money.");
+    console.log("That's not enough, you still owe me money.");
 }
 
 let runner = "Kendyll";
 let position = 2;
 let medal;
 
-if(position === 1) {
-  medal = "gold";
-} else if(position === 2) {
-  medal = "silver";
-} else if(position === 3) {
-  medal = "bronze";
+if (position === 1) {
+    medal = "gold";
+} else if (position === 2) {
+    medal = "silver";
+} else if (position === 3) {
+    medal = "bronze";
 } else {
-  medal = "pat on the back";
+    medal = "pat on the back";
 }
 
 console.log(runner + " received a " + medal + " medal.");
@@ -79,28 +79,28 @@ var suspect = "Mr. Parkes";
 var weapon = "";  // Initial value
 var solved = false;
 
-if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
+if (room === 'ballroom' && suspect === "Mr. Kalehoff") {
     weapon = 'poison';
     solved = true;
 }
 else if (room === 'gallery') {
     weapon = 'trophy';
-    if(suspect==="Ms. Van Cleve") 
+    if (suspect === "Ms. Van Cleve")
         solved = true;
 }
 else if (room === 'billiards room') {
     weapon = 'pool stick';
-    if(suspect==="Mrs. Sparr") 
+    if (suspect === "Mrs. Sparr")
         solved = true;
-} 
+}
 else if (room === 'dining room') {
     weapon = 'knife';
-    if(suspect==="Mr. Parkes") 
+    if (suspect === "Mr. Parkes")
         solved = true;
-}   
+}
 
 if (solved) {
-    console.log(suspect + " did it in the "+ room +" with the "+weapon+"!");
+    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
 }
 
 /* ****************************************** */
@@ -109,16 +109,16 @@ let balance = 325;
 let isActive = false;
 let checkBalance = true;
 
-if(checkBalance) {
-    if(isActive && balance > 0) {
+if (checkBalance) {
+    if (isActive && balance > 0) {
         console.log("Your balance is $" + balance.toFixed(2));
-    } else if(isActive && balance === 0) {
+    } else if (isActive && balance === 0) {
         console.log("Your account is empty");
     } else if (isActive && balance < 0) {
         console.log("Your balance is negative. Please contact bank");
-    } else if(!isActive) {
+    } else if (!isActive) {
         console.log("Your account is no longer active.")
-    } 
+    }
 } else {
     console.log("Thank you. Have a nice day!");
 }
@@ -137,8 +137,8 @@ let flavor = "strawberry";
 let vessel = "cone";
 let toppings = "cookies";
 
-if((flavor === 'vanilla' || flavor === 'chocolate') && (vessel === 'cone' || vessel === 'bowl')&& (toppings === 'sprinkles' || toppings === 'peanuts')) {
-            console.log("I\'d like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".");
+if ((flavor === 'vanilla' || flavor === 'chocolate') && (vessel === 'cone' || vessel === 'bowl') && (toppings === 'sprinkles' || toppings === 'peanuts')) {
+    console.log("I\'d like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".");
 }
 
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
@@ -163,22 +163,22 @@ var shirtSleeve = 8.71;
 
 var size = "NA";
 
-if ((shirtWidth>=18 && shirtWidth<20) && (shirtLength>=28 && shirtLength<29) && (shirtSleeve>=8.13 && shirtSleeve<8.38) ) {
+if ((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
     size = "S";
 }
-else if ((shirtWidth>=20 && shirtWidth<22) && (shirtLength>=29 && shirtLength<30) && (shirtSleeve>=8.38 && shirtSleeve<8.63) ) {
+else if ((shirtWidth >= 20 && shirtWidth < 22) && (shirtLength >= 29 && shirtLength < 30) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
     size = "M";
 }
-else if ((shirtWidth>=22 && shirtWidth<24) && (shirtLength>=30 && shirtLength<31) && (shirtSleeve>=8.63 && shirtSleeve<8.88) ) {
+else if ((shirtWidth >= 22 && shirtWidth < 24) && (shirtLength >= 30 && shirtLength < 31) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
     size = "L";
 }
-else if ((shirtWidth>=24 && shirtWidth<26) && (shirtLength>=31 && shirtLength<33) && (shirtSleeve>=8.88 && shirtSleeve<9.63) ) {
+else if ((shirtWidth >= 24 && shirtWidth < 26) && (shirtLength >= 31 && shirtLength < 33) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
     size = "XL";
 }
-else if ((shirtWidth>=26 && shirtWidth<28) && (shirtLength>=33 && shirtLength<34) && (shirtSleeve>=9.63 && shirtSleeve<10.13) ) {
+else if ((shirtWidth >= 26 && shirtWidth < 28) && (shirtLength >= 33 && shirtLength < 34) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
     size = "2XL";
 }
-else if ((shirtWidth>=28) && (shirtLength>=34) && (shirtSleeve>=10.13) ) {
+else if ((shirtWidth >= 28) && (shirtLength >= 34) && (shirtSleeve >= 10.13)) {
     size = "3XL";
 }
 else {
@@ -220,14 +220,14 @@ var tier = "none";
 var output = "You’ll receive "
 
 switch (tier) {
-  case "deck of legends":
-    output += "a custom card, ";
-  case "collector's deck":
-    output += "a signed version of the Exploding Kittens deck, ";
-  case "nsfw deck":
-    output += "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
-  default:
-    output += "one copy of the Exploding Kittens card game.";
+    case "deck of legends":
+        output += "a custom card, ";
+    case "collector's deck":
+        output += "a signed version of the Exploding Kittens deck, ";
+    case "nsfw deck":
+        output += "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
+    default:
+        output += "one copy of the Exploding Kittens card game.";
 }
 
 console.log(output);
@@ -259,17 +259,17 @@ switch (education) {
         salary = 84396;
         break;
 }
-console.log("In 2015, a person with "+education+" earned an average of $"+salary.toLocaleString("en-US")+"/year.");
+console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
 
 const raining = false;
 const cold = true;
 
 if (raining) {
-  console.log("Don't forget your umbrella!");
+    console.log("Don't forget your umbrella!");
 }
 
 if (cold) {
-  console.log("Make sure you pick out a scarf!");
+    console.log("Make sure you pick out a scarf!");
 }
 
 console.log("Now you're ready to go outside!");
@@ -277,11 +277,11 @@ console.log("Now you're ready to go outside!");
 const temperature = 52;
 
 if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!");
+    console.log("Make sure you pick out a scarf!");
 } else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!");
+    console.log("Short sleeves won't cut it!");
 } else {
-  console.log("Short sleeves are fine.");
+    console.log("Short sleeves are fine.");
 }
 
 console.log("Now you're ready to go outside!");
@@ -290,7 +290,7 @@ const isCitizen = true;
 const age = 26;
 
 if (isCitizen && age > 18) {
-  console.log("You are eligible to vote.");
+    console.log("You are eligible to vote.");
 }
 
 if (temperature < -40 || temperature > 40) {
@@ -299,5 +299,16 @@ if (temperature < -40 || temperature > 40) {
 
 if (!raining) {
     console.log("Leave your umbrella at home!");
-  }
-  
+}
+
+const whichSchool = function (age) {
+    if (age < 13) {
+        return "Elementary School";
+    } else if (age >= 13 && age <= 18) {
+        return "Secondary School";
+    } else {
+        return "Lighthouse Labs";
+    }
+}
+
+console.log(whichSchool(35));
