@@ -58,13 +58,13 @@ let hasEnoughPlayers = function(team) {
 // }
 // console.log(donuts);
 
-// donuts.forEach(function(donut) {
-//   donut += " hole";
-//   donut = donut.toUpperCase();
-//   console.log(donut);
-// });
+donuts.forEach(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  console.log(donut);
+});
 
-// console.log(donuts);
+console.log(donuts);
 
 let improvedDonuts = donuts.map(function(donut) {
   donut += " hole";

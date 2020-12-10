@@ -13,6 +13,18 @@
 //   x = x + 1;
 // }
 
+// for (const num of nums) {
+//   let output = "";
+
+//   if (num % 3 === 0) {
+//     output += "Loopy";
+//   }
+//   if (num % 4 === 0) {
+//     output += "Lighthouse";
+//   }
+//   console.log(output === "" ? num : output);
+// }
+
 const loopyLighthouse = function (range, multiples, words) {
 
   let x = range[0];
@@ -33,5 +45,6 @@ const loopyLighthouse = function (range, multiples, words) {
     x++;
   }
 }
+
 
 loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
